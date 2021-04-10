@@ -3,7 +3,6 @@ calculaQtdDias numPessoas populacao dia
     |numPessoas >= populacao = dia
     |otherwise = calculaQtdDias (numPessoas * 3) populacao (dia + 3)
     
-
 main :: IO()
 main = do
     nPessoas <- getLine
