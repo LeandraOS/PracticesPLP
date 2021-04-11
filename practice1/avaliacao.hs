@@ -1,22 +1,23 @@
+
 verificaDesempenho :: Int -> Int -> Float -> String
 verificaDesempenho atividade km tempo
-    |atividade == 1 = desempenhoCorrida km kmTotal
-    |atividade == 2 = desempenhoPedal km kmTotal
+    |atividade == 1 = desempenhoCorrida km velocidade
+    |atividade == 2 = desempenhoPedal km velocidade
     
-    where kmTotal = fromIntegral km / tempo
+    where velocidade = fromIntegral km / tempo
 
 desempenhoPedal :: Int -> Float -> String
-desempenhoPedal km kmTotal
-    |km > 20 = "Desempenho excelente"
-    |kmTotal <= 12 && kmTotal < 20 = "Desempenho excelente"
-    |kmTotal >=15 && kmTotal <= 24 = "Desempenho medio"
+desempenhoPedal km velocidade
+    |velocidade > 20 = "Desempenho excelente"
+    |km > 24 = "Desempenho excelente"
+    |km >=15 && km <= 24 = "Desempenho medio"
     |otherwise = "Baixo desempenho"
     
 desempenhoCorrida :: Int -> Float -> String
-desempenhoCorrida km kmTotal
-    |km > 12 = "Desempenho excelente"
-    |kmTotal > 12 && kmTotal < 20 = "Desempenho excelente"
-    |kmTotal >= 5 && kmTotal <= 10 = "Desempenho medio"
+desempenhoCorrida km velocidade
+    |velocidade > 12 = "Desempenho excelente"
+    |km > 10 = "Desempenho excelente"
+    |km >= 5 && km <= 10 = "Desempenho medio"
     |otherwise = "Baixo desempenho"
     
 main :: IO()
