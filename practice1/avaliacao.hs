@@ -30,3 +30,5 @@ main = do
     let tempo = read t :: Float
     let saida = verificaDesempenho atividade km tempo 
     print saida
+
+-
