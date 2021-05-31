@@ -8,11 +8,11 @@
   $ sudo apt-get install haskell-platform 
   ```
 
-#### Após a etapa de instalação, basta apenas executar os comandos abaixo.
+#### Após a etapa de instalação, basta apenas seguir o passo a passo exemplo para execução.
 
   ```
   $ git clone 
-  $ cd Practices/Haskell/Funcionalpt1
+  $ cd Practices/Haskell/FuncionalPt1
   $ runhaskell avaliacao.hs
   ```
 
