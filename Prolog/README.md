@@ -12,6 +12,6 @@
 
   ```
   $ git clone https://github.com/LeandraOS/PracticesPLP.git
-  $ cd Aloka/Prolog/LogicoPt1
+  $ cd Prolog/LogicoPt1
   $ swipl -s triangulo.pl
   ```
