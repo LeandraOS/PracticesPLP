@@ -11,7 +11,7 @@
 #### Após a etapa de instalação, basta apenas seguir o passo a passo exemplo para execução.
 
   ```
-  $ git clone 
+  $ git clone https://github.com/LeandraOS/PracticesPLP.git
   $ cd Practices/Haskell/FuncionalPt1
   $ runhaskell avaliacao.hs
   ```
