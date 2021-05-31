@@ -1,9 +1,9 @@
--- Ana gosta muito de correr e pedalar e ela sempre faz auto avaliações do seu desenvolvimento durante essas atividades.
--- Os limites de Ana correndo são de 10km e pedalando de 24km, se ela ultrapassa esses limites ela considera o desempenho "Desempenho excelente",
--- se executa entre 5km e 10km correndo ou entre 15km e 24km pedalando os considera "Desempenho medio", caso seja abaixo ela os considera "Baixo desempenho". 
--- Mas se em qualquer distância ela ultrapassar 12km/h correndo ou 20km/h pedalando ela já considera "Desempenho excelente".
+{- Ana gosta muito de correr e pedalar e ela sempre faz auto avaliações do seu desenvolvimento durante essas atividades.
+Os limites de Ana correndo são de 10km e pedalando de 24km, se ela ultrapassa esses limites ela considera o desempenho "Desempenho excelente",
+se executa entre 5km e 10km correndo ou entre 15km e 24km pedalando os considera "Desempenho medio", caso seja abaixo ela os considera "Baixo desempenho". 
+Mas se em qualquer distância ela ultrapassar 12km/h correndo ou 20km/h pedalando ela já considera "Desempenho excelente". -}
 
---Escreva um programa que recebe de Ana a atividade executada (1 - correr, 2 - pedalar), quantos km foram executados e em qual quantidade de horas.
+-- Escreva um programa que recebe de Ana a atividade executada (1 - correr, 2 - pedalar), quantos km foram executados e em qual quantidade de horas.
 
 verificaDesempenho :: Int -> Int -> Float -> String
 verificaDesempenho atividade km tempo
@@ -37,16 +37,17 @@ main = do
     let saida = verificaDesempenho atividade km tempo 
     print saida
 
---Teste Exemplo:
+{- Teste Exemplo:
 
---Entradas:
+Entradas:
 
--- 1
+1
 
--- 5
+5
 
--- 0.5
+0.5
 
--- Saída: 
+Saída: 
 
--- Desempenho médio
+Desempenho médio
+ -}

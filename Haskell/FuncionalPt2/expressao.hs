@@ -1,7 +1,7 @@
--- Digamos que você está construindo um compilador e você precisa implementar a função que verifica se todas as chaves que forem abertas 
--- durante o código foram fechadas antes da finalização dele, e que elas foram fechadas na ordem certa. O conjunto de chaves `{{}` não é 
--- correto pois está faltando um }, já o conjunto '{}{' também não está uma vez que tem um { sem ser fechado. 
--- Escreva um programa que recebe uma string representando as chaves e retorne se trata-se de um programa válido ou não.
+{- Digamos que você está construindo um compilador e você precisa implementar a função que verifica se todas as chaves que forem abertas 
+durante o código foram fechadas antes da finalização dele, e que elas foram fechadas na ordem certa. O conjunto de chaves `{{}` não é 
+correto pois está faltando um }, já o conjunto '{}{' também não está uma vez que tem um { sem ser fechado. 
+Escreva um programa que recebe uma string representando as chaves e retorne se trata-se de um programa válido ou não. -}
  
 verificaExpressao :: String -> String -> Bool 
 verificaExpressao "" "" = True
@@ -26,8 +26,8 @@ main = do
     let resultado = verificaExpressao expressao "" 
     print $ saida expressao resultado 
 
--- Entrada:
---{{{}}
+{-  Entrada:
+{{{}}
 
--- Saída:
--- O programa {{{}} nao eh valido
+Saída:
+O programa {{{}} nao eh valido -}

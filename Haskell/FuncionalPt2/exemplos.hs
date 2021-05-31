@@ -1,8 +1,4 @@
 
-verifica :: [String] -> String 
-verifica [] = 0
-verifica frase(a:as) = a + "," + verifica 
-
 main :: IO()
 main = do
     l <- getLine
@@ -14,7 +10,6 @@ removeNonUppercase :: String -> String
 removeNonUppercase "" = ""
 removeNonUppercase (h:t) = if not(upper h) then removeNonUppercase t -- se h não é maiusculo eu coloco pra frente
                             else [h] ++ removeNonUppercase t 
-
 
 upper :: Char -> Bool 
 upper c = find c ['A'.. 'Z']
@@ -28,12 +23,3 @@ sumList :: [Int] -> Int
 sumList [] = 0
 sumList(h:t) = h + sumList t
 
-removeNonUppercase :: String -> String
-removeNonUppercase st = [c | c <- st, elem c ['A'.. 'Z']]
-
-toTheLeft :: Int -> String -> String 
-toTheLeft n st = createSpaces n  ++ st
-
-
-plural :: [String] -> Int 
-plural st = length ()
