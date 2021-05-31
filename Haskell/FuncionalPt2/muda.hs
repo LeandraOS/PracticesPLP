@@ -1,3 +1,4 @@
+-- 
 criptografa :: String -> String -> String -> String 
 criptografa "" letra letraNova = ""
 criptografa (h:t) (x:xs) letraNova  
@@ -11,3 +12,4 @@ main = do
     letraNova <- getLine
     let saida = criptografa frase letra letraNova
     print saida
+

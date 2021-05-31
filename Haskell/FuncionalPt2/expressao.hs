@@ -1,3 +1,4 @@
+-- 
 verificaExpressao :: String -> String -> Bool 
 verificaExpressao "" "" = True
 verificaExpressao "" _ = False  
