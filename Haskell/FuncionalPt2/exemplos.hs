@@ -1,8 +1,3 @@
--muda :: String -> tSring -> [String]
---muda letra frase =  [letra| x <- [frase], verifica frase]
--- removeNonUppercase :: String -> String
-removeNonUppercase st = [c | c <- st , c `elem` ['A'.. 'Z']
-
 
 verifica :: [String] -> String 
 verifica [] = 0
@@ -32,8 +27,6 @@ find c (h:t) = if c == h then True
 sumList :: [Int] -> Int 
 sumList [] = 0
 sumList(h:t) = h + sumList t
-
-
 
 removeNonUppercase :: String -> String
 removeNonUppercase st = [c | c <- st, elem c ['A'.. 'Z']]
