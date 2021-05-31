@@ -12,7 +12,7 @@
 
   ```
   $ git clone https://github.com/LeandraOS/PracticesPLP.git
-  $ cd Practices/Haskell/FuncionalPt1
+  $ cd PracticesPLP/Haskell/FuncionalPt1
   $ runhaskell avaliacao.hs
   ```
 
